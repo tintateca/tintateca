@@ -5,6 +5,7 @@ interface Props {
 const { title } = Astro.props;
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+import SocialMedia from '@components/SocialMedia.astro';
 import IconHelp from '@components/IconHelp.svelte';
 import '../styles/style.css';
 ---
@@ -27,6 +28,7 @@ import '../styles/style.css';
 		<main class="max-w-5xl px-4 m-auto">
 			<slot />
 		</main>
+		<SocialMedia/>
 		<Footer/>
 		<IconHelp/>
 	</body>
